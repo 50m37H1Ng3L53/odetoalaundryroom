@@ -16,17 +16,25 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: smaller;
         color: aliceblue;
-        align-items: center;
+    }
+
+    .alignleft {
+      text-align: left !important;
+      margin: auto;
+      display: inline-block;
     }
 
     figure { 
     display: inline-block;
     border: 1px solid red;
 }
-        ul {list-style-type:none;}
-        summary {padding-left: 10px;}
-        img {max-width: 800px;
+        img {
+         max-width: 800px;
                max-height: 400px; 
+               max-width: 800px;
+max-height: 400px;
+display: block;
+margin: auto;
 
         }
         video {
@@ -34,19 +42,33 @@
             max-height: 400px; 
         }
         p {
-            text-align: center;
-            width: 400px;
+            width: auto;
+            max-width: 400px;
             height: inherit; 
             font-size: initial;
         }
 
-        .alignleft {
-            text-align: left;
-        }
+        .text {
+         width: auto;
+         max-width: 400px;
+         margin: auto;
+         
+  text-align: center;
+
+      }
+
+      .scroll-container {
+         display: block;
+         text-align: center;
+         margin: auto;
+         width: fit-content;
+      }
+        
     </style>
     
 </head>
 <body>
+   <div class="text">
     <p style="font-weight: 800;">this is an ode to the first place where i felt safe and warm during my refuge</p>
     <br>
     <p>my dear friend was kind to me to offer a place to stay when i planned to visit for 10 days to see my pals. a laundry room at the place they were renting.
@@ -54,9 +76,10 @@
       </p>
        <br>
        <img src="img/img1.jpg" alt="this is the first picture i have of the laundry room. i asked my friend to stay there for 10 days when i visit, so they sent me a pic as a reference, on 19th of february, 5 days before the war started" 
-       title="this is the first picture i have of the laundry room. i asked my friend to stay there for 10 days when i visit, so they sent me a pic as a reference, on 19th of february, 5 days before the war started"> 
+       title="this is the first picture i have of the laundry room. i asked my friend to stay there for 10 days when i visit, so they sent me a pic as a reference, on 19th of february, 5 days before the war started" class="firstpic"> 
   
-    <p class="alignleft">this laundry room have gone thru so much with me<br>
+   <div class="alignleft">    
+    <p>this laundry room have gone thru so much with me<br>
     i did so much there <br>
     i cried myself to sleep there so many nights <br>
     had so many nightmares <br>
@@ -82,11 +105,12 @@
     with this page i want this room to be remembered as a place that brought at least a bit of peace,
     comfort and safety to someone. as a home rather than just a laundry room. <br>
     </p>
-
+   </div>
     <p style="color: grey;">special thanks to my dear friend for helping me and providing me with a safe space. thanks to my other friend with helping me editing texts for this project. thanks to all my friends and everyone who helped me. this is an ode to you, too.</p>
 
     <p style="color: grey;">pictures are in chronlogical order, from the very first picture of the room i got from my friend, to the last day when i was moving out</p>
-    
+   </div>
+
     <div class="scroll-container">
         <figure>
         <img src="img/img1.jpg">
