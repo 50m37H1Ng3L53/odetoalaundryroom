@@ -70,15 +70,18 @@ display: inline-block;
          text-align: center;
          margin: auto;
          width: fit-content;
-         box-sizing: border-box;
+         
       }
 
-      @media only screen and (max-width: 600px) {
-            .text,
-            .scroll-container {
-               padding: 0;
-            }
-        }
+      @media screen and (max-width:640px) {
+html {
+       overflow-x: hidden;
+   }
+   body {
+       padding-left: 10px;
+       padding-right: 10px;
+   }
+}
         
     </style>
     
